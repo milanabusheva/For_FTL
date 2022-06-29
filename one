@@ -1,0 +1,16 @@
+n, k = map(int, input().split())
+sp = list(map(int, input().split()))
+def func(mid, n, k, sp):
+    prev_x = 1
+    count = 1
+    t = 1
+    while t <=
+l = 0
+r = n * max(sp)
+while r - l > 1:
+    mid = l + (r - l) // 2
+    if func(mid, n, k, sp):
+        r = mid
+    else:
+        l = mid
+print(r)
